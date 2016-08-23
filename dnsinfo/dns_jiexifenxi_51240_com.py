@@ -45,6 +45,8 @@ def dns_info(domain=None, contains_value=None):
         file_name = log_err_file_name
     util.write_log_file(filename=file_name, log_content=dns_info_time + '\n')
     util.write_log_file(filename=file_name, log_content=rs_content)
+    util.write_log_file(filename=file_name, log_content='\n')
+    util.write_log_file(filename=file_name, log_content='------------------------split------------------------\n')
     print 'rs__code = ', rs_code
     print 'file name = ', file_name
 
