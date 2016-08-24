@@ -47,7 +47,7 @@ def dns_info(domain=None):
     else:
         file_name = log_err_file_name
     util.write_log_file(filename=file_name, log_content=dns_info_time + ' | ')
-    util.write_log_file(filename=file_name, log_content=rs_content)
+    util.write_log_file(filename=file_name, log_content=rs_content + '\n')
 
 
 if __name__ == '__main__':
