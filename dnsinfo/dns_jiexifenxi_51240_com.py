@@ -23,7 +23,7 @@ def search_dns_info(domain=None):
         'q': domain,
         'type': 'a'
     }
-    response = requests.get(url=dns_info_url, params=params, timeout=10)
+    response = requests.get(url=dns_info_url, params=params, timeout=30)
     return response.status_code, response.text
 
 
