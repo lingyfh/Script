@@ -10,7 +10,7 @@ log_path = os.path.dirname(os.path.abspath(__file__))
 log_path = str(log_path).replace('dnsinfo', 'log')
 
 log_file_name = log_path + '/dns_jiexifenxi.log'
-log_err_file_name = log_path + '/dns_jiexifenxi.err'
+log_err_file_name = log_path + '/dns_jiexifenxi.err.log'
 
 def search_dns_info(domain=None):
     dns_info_url = 'http://jiexifenxi.51240.com/web_system/51240_com_www/system/file/jiexifenxi/get/'
