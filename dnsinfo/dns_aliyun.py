@@ -50,8 +50,10 @@ def dns_info(domain=None):
             # rs_location = rs_data[0]['location']
             util.write_log_file(filename=log_file_name, log_content=rs_ip + '\n')
         else:
+            util.write_log_file(filename=log_err_file_name, log_content=dns_info_time + ' | ')
             util.write_log_file(filename=log_err_file_name, log_content=rs_content + '\n')
     else:
+        util.write_log_file(filename=log_err_file_name, log_content=dns_info_time + ' | ')
         util.write_log_file(filename=log_err_file_name, log_content=rs_content + '\n')
 
 if __name__ == '__main__':
