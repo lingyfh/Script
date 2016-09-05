@@ -13,6 +13,10 @@ import logging
 logging.basicConfig()
 
 domain = 'androidesk.com'
+domain_ip = '210.14.154.134'
+
+domain = 'adesk.com'
+domain_ip = '210.14.154.133'
 
 
 def dns_nslookup_info():
@@ -21,8 +25,8 @@ def dns_nslookup_info():
 
 
 def dns_jiexifenxi_info():
-    dns_jiexifenxi_51240_com.dns_info(domain=domain, contains_value='210.14.154.134')
-
+    dns_jiexifenxi_51240_com.dns_info(domain=domain, contains_value=domain_ip)
+    
 
 def dns_ip3366_info():
     dns_dns_ip3366_com.dns_info(domain=domain)
